@@ -101,4 +101,7 @@ Proof.
   by do 2! case.
 Qed.
 
+Print reflect.
+Check reflect.
+
 End Symmetric_Conjunction_Disjunction.
