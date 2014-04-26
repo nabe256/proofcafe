@@ -41,9 +41,24 @@ Proof.
   exact H0.
 Qed.
 
+Check hAiBiC.
+Check (hAiBiC hA).
+Check (hAiBiC hA (hAiB hA)).
+
 Lemma HilbertS4 : C.
 Proof.
   exact : (hAiBiC _ (hAiB _)).
+Qed.
+
+Lemma HilbertS5 : C.
+Proof.
+  exact : hAiBiC (hAiB _).
+Qed.
+
+Lemma HilbertS5' : C.
+Proof.
+  move : hAiBiC (hAiB hA).
+  by apply.
 Qed.
 
 End HilbertSaxiom.
