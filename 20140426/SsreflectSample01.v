@@ -61,4 +61,9 @@ Proof.
   by apply.
 Qed.
 
+Lemma HilbertS6 : C.
+Proof.
+  exact : HilbertS5.
+Qed.
+
 End HilbertSaxiom.
