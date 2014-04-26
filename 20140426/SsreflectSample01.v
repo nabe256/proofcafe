@@ -38,7 +38,12 @@ Theorem ModusPonens : (A -> B) -> A -> B.
 Proof.
   intros.
   apply H.
-  apply H0.
+  exact H0.
+Qed.
+
+Lemma HilbertS4 : C.
+Proof.
+  exact : (hAiBiC _ (hAiB _)).
 Qed.
 
 End HilbertSaxiom.
