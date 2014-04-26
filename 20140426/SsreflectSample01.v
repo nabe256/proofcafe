@@ -21,4 +21,17 @@ Proof.
   exact : hAiB.
 Qed.
 
+Lemma HilbertS2' : C.
+Proof.
+  move:hAiBiC.
+  apply.
+    by [].
+  exact : hAiB.
+Qed.
+
+Lemma HilbertS3 : C.
+Proof.
+  by apply: hAiBiC; last exact: hAiB.
+Qed.
+
 End HilbertSaxiom.
