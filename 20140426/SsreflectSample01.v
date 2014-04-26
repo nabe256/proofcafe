@@ -13,4 +13,12 @@ Proof.
   by apply: hAiB.
 Qed.
 
+Hypotheses (hAiBiC : A -> B -> C) (hAiB : A -> B) (hA : A).
+
+Lemma HilbertS2 : C.
+Proof.
+  apply : hAiBiC; first by apply : hA.
+  exact : hAiB.
+Qed.
+
 End HilbertSaxiom.
