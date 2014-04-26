@@ -67,3 +67,38 @@ Proof.
 Qed.
 
 End HilbertSaxiom.
+
+Section Symmetric_Conjunction_Disjunction.
+
+Lemma andb_sym : forall A B : bool,
+  A && B -> B && A.
+Proof.
+  case.
+    by case.
+  by [].
+Qed.
+
+
+Lemma andb_sym' : forall A B : bool,
+  A && B -> B && A.
+Proof.
+  case.
+    case.
+      by [].
+    by case.
+  by [].
+Qed.
+
+Lemma andb_sym2 : forall A B : bool,
+  A && B -> B && A.
+Proof.
+  by case; case.
+Qed.
+
+Lemma andb_sym3 : forall A B : bool,
+  A && B -> B && A.
+Proof.
+  by do 2! case.
+Qed.
+
+End Symmetric_Conjunction_Disjunction.
