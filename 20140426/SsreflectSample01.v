@@ -34,4 +34,11 @@ Proof.
   by apply: hAiBiC; last exact: hAiB.
 Qed.
 
+Theorem ModusPonens : (A -> B) -> A -> B.
+Proof.
+  intros.
+  apply H.
+  apply H0.
+Qed.
+
 End HilbertSaxiom.
